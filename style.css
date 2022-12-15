@@ -36,6 +36,9 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 - Weights: 700
  */
 
+
+
+
 :root {
   --clr-primary-100: hsl(31, 77%, 52%);
   --clr-primary-200: hsl(184, 100%, 22%);
@@ -47,6 +50,14 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
   --fw-400: 400;
   --fw-700: 700;
   box-sizing: border-box;
+
+  --ff-500: 'Big Shoulders Display', cursive;
+
+ 
+
+  --ff-400: 'Lexend Deca', sans-serif;
+
+
 }
 *,
 *::after,
@@ -107,6 +118,8 @@ h1 {
 }
 .card {
   flex-basis: 100%;
+  font-family: var(--ff-400);
+  font-weight: var(--fw-400);
 }
 @media (min-width: 900px) {
   .cards {
@@ -133,6 +146,8 @@ h1 {
 }
 .card-title {
   color: var(--clr-neutral-300);
+  font-family: var(--ff-500);
+  font-weight: var(--fw-700);
 }
 @media (min-width: 900px) {
 
