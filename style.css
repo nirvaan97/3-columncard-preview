@@ -36,8 +36,7 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 - Weights: 700
  */
 
-
-
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca:wght@400;700&display=swap");
 
 :root {
   --clr-primary-100: hsl(31, 77%, 52%);
@@ -51,13 +50,9 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
   --fw-700: 700;
   box-sizing: border-box;
 
-  --ff-500: 'Big Shoulders Display', cursive;
+  --ff-500: "Big Shoulders Display";
 
- 
-
-  --ff-400: 'Lexend Deca', sans-serif;
-
-
+  --ff-400: "Lexend Deca", sans-serif;
 }
 *,
 *::after,
@@ -74,7 +69,6 @@ p {
 
 body {
   line-height: 1.6;
-  /* height: 100vh; */
 }
 .card {
   font-size: var(--fs-400);
@@ -102,8 +96,10 @@ h1 {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 900px;
   margin: 0 auto;
+  /* outline: 1em solid red; */
+  padding: 6em 0;
 }
 
 .cards {
@@ -136,7 +132,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 .card:nth-of-type(1) {
   border-radius: 0.5em 0.5em 0 0;
@@ -150,7 +145,6 @@ h1 {
   font-weight: var(--fw-700);
 }
 @media (min-width: 900px) {
-
   .card:nth-of-type(1) {
     border-radius: 0.5em 0 0 0.5em;
   }
@@ -164,16 +158,15 @@ h1 {
   text-decoration: none;
   color: var(--bg);
   background-color: var(--clr-neutral-300);
-  padding: 0.9em 2em;
+  padding: 0.85em 3em;
   border-radius: 2em;
   cursor: pointer;
-  
+
   /* font-weight: var(--fw-700); */
 }
-.card:nth-of-type(3) .btn{
-    margin-top: auto;
-    /* making sure it stick aligned with the other button in larger screen sizes */
-
+.card:nth-of-type(3) .btn {
+  margin-top: auto;
+  /* making sure it stick aligned with the other button in larger screen sizes */
 }
 .btn:hover {
   background-color: var(--bg);
